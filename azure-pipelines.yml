@@ -19,7 +19,7 @@ steps:
     vsVersion: "16.0"
     msbuildArgs: '/t:Build'
     platform: 'Any CPU'
-    configuration: DebugWin32  
+    configuration: Debug  
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
