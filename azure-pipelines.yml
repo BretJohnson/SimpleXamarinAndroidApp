@@ -17,7 +17,7 @@ steps:
   inputs:
     solution: SimpleXamarinAndroidApp.sln
     vsVersion: "16.0"
-    msbuildArgs: '/t:Build'
+    msbuildArgs: '/t:Restore /t:Build'
     platform: 'Any CPU'
     configuration: Debug  
 
