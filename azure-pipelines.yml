@@ -12,6 +12,14 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: VSBuild@1
+  displayName: 'Build solution'
+  inputs:
+    solution: SimpleXamarinAndroidApp.sln
+    vsVersion: "16.0"
+    msbuildArgs: '/t:Build'
+    platform: 'Any CPU'
+    configuration: DebugWin32  
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
